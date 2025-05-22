@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayaram Rohith - Portfolio</title>
+    <meta name="description" content="Portfolio of Jayaram Rohith - Software Engineer, Web Developer, Problem Solver">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="#home" class="brand-link">
+                        <span class="brand-text">Jayaram Rohith</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                    <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </div>
+
+                <!-- Dark Mode Toggle -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                    <svg class="moon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="mobile-menu-btn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu">
+                <div class="mobile-nav-links">
+                    <a href="#home" class="mobile-nav-link" data-section="home">Home</a>
+                    <a href="#about" class="mobile-nav-link" data-section="about">About</a>
+                    <a href="#experience" class="mobile-nav-link" data-section="experience">Experience</a>
+                    <a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a>
+                    <a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a>
+                    <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <!-- Background Elements -->
+            <div class="hero-bg">
+                <div class="bg-circle bg-circle-1"></div>
+                <div class="bg-circle bg-circle-2"></div>
+                <div class="bg-circle bg-circle-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <span>Welcome to my portfolio</span>
+                        </div>
+                        <h1 class="hero-title">
+                            <span class="title-line">Hi, I'm</span>
+                            <span class="title-name">Jayaram Rohith</span>
+                        </h1>
+                        <div class="role-container">
+                            <div id="role-slider" class="role-slider">
+                                <div class="role-item">Software Engineer</div>
+                                <div class="role-item">Web Developer</div>
+                                <div class="role-item">Problem Solver</div>
+                            </div>
+                        </div>
+                        <p class="hero-description">
+                            A passionate software engineer with experience in web development using JavaScript, React.js, and more.
+                            Looking to work in a progressive organization where I can enhance my skills and contribute to the success of the organization.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary">Contact Me</a>
+                            <a href="#projects" class="btn btn-secondary">View Projects</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image">
+                        <div class="code-window">
+                            <!-- Window Controls -->
+                            <div class="window-header">
+                                <div class="window-controls">
+                                    <span class="control-btn close"></span>
+                                    <span class="control-btn minimize"></span>
+                                    <span class="control-btn maximize"></span>
+                                </div>
+                            </div>
+
+                            <!-- Code Content -->
+                            <div class="code-content">
+                                <div class="code-line">
+                                    <span class="keyword">const</span>
+                                    <span class="variable">developer</span>
+                                    <span class="operator">=</span>
+                                    <span class="punctuation">{</span>
+                                </div>
+                                <div class="code-line indent-1">
+                                    <span class="property">name</span><span class="punctuation">:</span>
+                                    <span class="string">'Jayaram Rohith'</span><span class="punctuation">,</span>
+                                </div>
+                                <div class="code-line indent-1">
+                                    <span class="property">skills</span><span class="punctuation">:</span>
+                                    <span class="punctuation">[</span><span class="string">'JavaScript'</span><span class="punctuation">,</span>
+                                    <span class="string">'React.js'</span><span class="punctuation">,</span>
+                                    <span class="string">'Python'</span><span class="punctuation">],</span>
+                                </div>
+                                <div class="code-line indent-1">
+                                    <span class="property">passion</span><span class="punctuation">:</span>
+                                    <span class="string">'Building amazing web experiences'</span><span class="punctuation">,</span>
+                                </div>
+                                <div class="code-line indent-1">
+                                    <span class="property">status</span><span class="punctuation">:</span>
+                                    <span class="string">'Available for opportunities'</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="punctuation">};</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scroll Down Indicator -->
+                <div class="scroll-indicator">
+                    <a href="#about" class="scroll-link">
+                        <span class="scroll-text">Scroll Down</span>
+                        <svg class="scroll-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-bg">
+                <div class="bg-gradient bg-gradient-1"></div>
+                <div class="bg-circle bg-circle-about-1"></div>
+                <div class="bg-circle bg-circle-about-2"></div>
+            </div>
+
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">About Me</span>
+                    <h2 class="section-title">Get to Know Me Better</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-paragraph">
+                            I am <span class="highlight">Jayaram Rohith</span>, a passionate software engineer with a strong foundation in web development technologies.
+                            I have completed my B.Tech degree from JB Institute of Technology Engineering in 2025.
+                        </p>
+                        <p class="about-paragraph">
+                            I have experience working as a <span class="highlight">Software Engineer Intern</span> at Workcohol company, where I developed and tested web applications
+                            using JavaScript and React.js. I also worked on backend API development and database optimization in MySQL.
+                        </p>
+                        <p class="about-paragraph">
+                            My technical expertise includes <span class="highlight">Python, Java, JavaScript, HTML/CSS, React.js, Next.js, Django, SQL, and Git</span>.
+                            I am passionate about creating efficient, scalable solutions and continuously learning new technologies.
+                        </p>
+                        <p class="about-paragraph">
+                            I am looking for opportunities to work in a progressive organization where I can enhance my skills and contribute to meaningful projects
+                            that make a positive impact.
+                        </p>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">9+</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">80%</div>
+                            <div class="stat-label">B.Tech Score</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience & Education</h2>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="experience-category">
+                    <h3 class="category-title">Work Experience</h3>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 class="experience-title">Software Engineer (Intern)</h4>
+                            <div class="experience-date">Dec 2024 - Mar 2025</div>
+                        </div>
+                        <div class="experience-company">Workcohol Company</div>
+                        <ul class="experience-details">
+                            <li>Developed and tested web applications using JavaScript and React.js</li>
+                            <li>Worked on backend API development and database optimization in MySQL</li>
+                            <li>Collaborated with cross-functional teams to enhance application functionality</li>
+                            <li>Delivered key modules ahead of deadlines, ensuring high-quality performance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="experience-category">
+                    <h3 class="category-title">Education</h3>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 class="experience-title">Bachelor of Technology</h4>
+                            <div class="experience-date">2021 - 2025</div>
+                        </div>
+                        <div class="experience-company">JB Institute of Technology Engineering</div>
+                        <div class="experience-details">
+                            <div class="education-detail">
+                                <span class="detail-label">University:</span> JNTUH
+                            </div>
+                            <div class="education-detail">
+                                <span class="detail-label">Percentage:</span> 80%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 class="experience-title">Intermediate (12th)</h4>
+                            <div class="experience-date">2019 - 2021</div>
+                        </div>
+                        <div class="experience-company">Loyola Junior College</div>
+                        <div class="experience-details">
+                            <div class="education-detail">
+                                <span class="detail-label">Board:</span> Board of Intermediate Education
+                            </div>
+                            <div class="education-detail">
+                                <span class="detail-label">Percentage:</span> 92%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 class="experience-title">Secondary School (10th)</h4>
+                            <div class="experience-date">2019</div>
+                        </div>
+                        <div class="experience-company">Tapovan High School</div>
+                        <div class="experience-details">
+                            <div class="education-detail">
+                                <span class="detail-label">Board:</span> Board of Secondary Education
+                            </div>
+                            <div class="education-detail">
+                                <span class="detail-label">Percentage:</span> 95%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-bg">
+                <div class="bg-gradient bg-gradient-2"></div>
+                <div class="bg-circle bg-circle-projects-1"></div>
+                <div class="bg-circle bg-circle-projects-2"></div>
+            </div>
+
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">Here are some of the projects I've worked on</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Coffee Shop -->
+                    <div class="project-card">
+                        <div class="project-image coffee-shop">
+                            <div class="project-overlay">
+                                <span class="project-name">Coffee Shop</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Coffee Shop Website</h3>
+                                <span class="project-date">Apr - May 2025</span>
+                            </div>
+                            <p class="project-description">
+                                Developed a fully responsive and visually engaging website for a coffee shop, featuring multiple pages including Home, Menu, Gallery, and Contact sections.
+                            </p>
+                            <div class="project-features">
+                                <h4 class="features-title">Key Features:</h4>
+                                <ul class="features-list">
+                                    <li>Hero section with call-to-action buttons</li>
+                                    <li>Categorized menu pages with detailed descriptions</li>
+                                    <li>Filterable gallery with lightbox functionality</li>
+                                    <li>Google Maps integration and contact form</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <h4 class="tech-title">Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Responsive Design</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://rohith131707.github.io/memucoffeeshop/" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
+                                    View Live Demo
+                                    <svg class="link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/rohith131707/memucoffeeshop" target="_blank" rel="noopener noreferrer" class="project-link github-link">
+                                    <svg class="github-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Trading Platform -->
+                    <div class="project-card">
+                        <div class="project-image trading-platform">
+                            <div class="project-overlay">
+                                <span class="project-name">Trading Platform</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Third-Party Trading Platform</h3>
+                                <span class="project-date">2024</span>
+                            </div>
+                            <p class="project-description">
+                                A platform for trading stocks, bonds, and commodities using third-party services like Angel Broking and 5Paisa.
+                            </p>
+                            <div class="project-features">
+                                <h4 class="features-title">Key Features:</h4>
+                                <ul class="features-list">
+                                    <li>User-friendly interface for seamless transactions</li>
+                                    <li>Secure API integration with trading services</li>
+                                    <li>Real-time updates and accurate asset pricing</li>
+                                    <li>Robust backend systems for reliable performance</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <h4 class="tech-title">Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">APIs</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://test-1-git-main-rohith131707s-projects.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
+                                    View Live Demo
+                                    <svg class="link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link github-link">
+                                    <svg class="github-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Traffic Surveillance -->
+                    <div class="project-card">
+                        <div class="project-image traffic-surveillance">
+                            <div class="project-overlay">
+                                <span class="project-name">Traffic Surveillance</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Real-Time Traffic Surveillance</h3>
+                                <span class="project-date">2024</span>
+                            </div>
+                            <p class="project-description">
+                                A system using deep learning and computer vision techniques for real-time traffic monitoring and analysis.
+                            </p>
+                            <div class="project-features">
+                                <h4 class="features-title">Key Features:</h4>
+                                <ul class="features-list">
+                                    <li>Image processing for edge detection and object tracking</li>
+                                    <li>Neural networks for object detection and classification</li>
+                                    <li>Feature extraction and image segmentation</li>
+                                    <li>Video analytics for comprehensive traffic analysis</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <h4 class="tech-title">Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">OpenCV</span>
+                                    <span class="tech-tag">Computer Vision</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link github-link">
+                                    <svg class="github-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills</h2>
+                    <p class="section-description">My technical and soft skills</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Technical Skills -->
+                    <div class="skills-category">
+                        <h3 class="skills-category-title">Technical Skills</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="60"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Next.js</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Django</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Git</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skills-category">
+                        <h3 class="skills-category-title">Soft Skills</h3>
+                        <div class="soft-skills-grid">
+                            <div class="soft-skill-item">
+                                <svg class="soft-skill-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="soft-skill-name">Problem Solving</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <svg class="soft-skill-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="soft-skill-name">Quick Learner</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <svg class="soft-skill-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="soft-skill-name">Team Collaboration</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <svg class="soft-skill-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="soft-skill-name">Communication</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <svg class="soft-skill-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="soft-skill-name">Time Management</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <svg class="soft-skill-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="soft-skill-name">Adaptability</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <svg class="soft-skill-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="soft-skill-name">Self-Motivation</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <svg class="soft-skill-icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="soft-skill-name">Attention to Detail</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Skills -->
+                <div class="other-skills">
+                    <h3 class="skills-category-title">Other Skills</h3>
+                    <div class="other-skills-content">
+                        <div class="other-skills-grid">
+                            <div class="other-skill-item">
+                                <h4 class="other-skill-title">Operating Systems:</h4>
+                                <p class="other-skill-text">Windows</p>
+                            </div>
+                            <div class="other-skill-item">
+                                <h4 class="other-skill-title">Application Software:</h4>
+                                <p class="other-skill-text">MS-Office</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div class="achievements">
+                    <h3 class="skills-category-title">Achievements</h3>
+                    <div class="achievements-content">
+                        <ul class="achievements-list">
+                            <li>Awarded the Best Student Award for consistent academic excellence in 10th class</li>
+                            <li>Achieved 1st place in the chess competition in 12th class</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Me</h2>
+                    <p class="section-description">Feel free to reach out to me for any inquiries or opportunities</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Contact Information</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Email</p>
+                                    <a href="mailto:rohithjayaram33@gmail.com" class="contact-value">rohithjayaram33@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Phone</p>
+                                    <a href="tel:+917993511614" class="contact-value">+91 7993511614</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Address</p>
+                                    <p class="contact-value">
+                                        Flat No S-1-201 Chennakeshava heights<br>
+                                        Bandlaguda jagiri, Opp HP Petrol Pump<br>
+                                        Hyderabad, PIN-500091
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h3 class="contact-form-title">Send Me a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="4" class="form-textarea" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" id="submit-btn" class="form-submit">
+                                    <span class="submit-text">Send Message</span>
+                                    <span class="submit-loading" style="display: none;">Sending...</span>
+                                </button>
+                            </div>
+
+                            <div id="form-status" class="form-status" style="display: none;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-name">Jayaram Rohith</h3>
+                    <p class="footer-description">Software Engineer passionate about creating innovative solutions</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/Rohith131707" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jayaram-rohith-b8b8b8b8b8/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:rohithjayaram33@gmail.com" class="footer-social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/>
+                                <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        &copy; <span id="current-year">2024</span> Jayaram Rohith. All rights reserved.
+                    </div>
+                    <div class="footer-tech">
+                        <p>Made with HTML, CSS and JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
