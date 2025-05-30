@@ -1,4 +1,4 @@
-// Portfolio JavaScript - All functionality in vanilla JS
+
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functionality
@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
 });
 
-// Navigation functionality
+
 function initNavigation() {
     const navbar = document.getElementById('navbar');
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
 
-    // Handle scroll effect on navbar
+ 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -27,13 +27,13 @@ function initNavigation() {
         }
     });
 
-    // Mobile menu toggle
+ 
     mobileMenuBtn.addEventListener('click', function() {
         mobileMenu.classList.toggle('active');
         mobileMenuBtn.classList.toggle('active');
     });
 
-    // Close mobile menu when clicking on links
+   
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             mobileMenu.classList.remove('active');
@@ -41,7 +41,7 @@ function initNavigation() {
         });
     });
 
-    // Active section highlighting
+   
     const sections = document.querySelectorAll('section[id]');
     
     function updateActiveSection() {
@@ -67,12 +67,12 @@ function initNavigation() {
     updateActiveSection(); // Initial call
 }
 
-// Theme toggle functionality
+
 function initThemeToggle() {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
     
-    // Check for saved theme preference or default to light mode
+   
     const savedTheme = localStorage.getItem('theme') || 'light';
     body.setAttribute('data-theme', savedTheme);
     
@@ -85,7 +85,7 @@ function initThemeToggle() {
     });
 }
 
-// Scroll animations using Intersection Observer
+
 function initScrollAnimations() {
     const observerOptions = {
         threshold: 0.1,

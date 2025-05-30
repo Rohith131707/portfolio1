@@ -553,7 +553,7 @@ body {
 }
 
 [data-theme="dark"] .code-window {
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(132, 138, 151, 0.95);
     border-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -564,7 +564,7 @@ body {
 }
 
 [data-theme="dark"] .window-header {
-    background: rgba(30, 41, 59, 0.8);
+    background: rgba(77, 118, 184, 0.8);
 }
 
 .window-controls {
